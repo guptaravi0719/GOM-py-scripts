@@ -1,0 +1,25 @@
+{% block title %}<h2>Result:</h2><strong>{{poll.question}}</strong>{% endblock %}
+
+</br>
+<div class="column"  >
+
+    <div class="row">
+        {{ poll.option_one }} = {{ poll.option_one_count }}<br />
+    </div>
+
+    <hr />
+    <div class="row">
+        {{ poll.option_two }} = {{ poll.option_two_count }}<br />
+    </div>
+    <hr />
+    <div class="row">
+        {{ poll.option_three }} = {{ poll.option_three_count }}<br />
+
+    </div>
+    <hr />
+    <hr />
+    <div class="row">
+        Total Votes = {{ poll.total }}<br />
+    </div>
+
+</div>
